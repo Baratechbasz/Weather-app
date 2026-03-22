@@ -1,6 +1,6 @@
 function checkweather(){
     let city = document.getElementById("city").value;
-    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=877fec53edbb015a9808a40c87d09c77&units=metric")
+    fetch("https://api.openweathermap.org/data/2.5/weather?q=" + c")
         .then(response => response.json())
         .then(data => {
             if (data.cod === "404") {
